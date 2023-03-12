@@ -1,0 +1,22 @@
+body {
+  font-family: cursive;
+}
+
+a {
+  display: block;
+  padding: 20px;
+  text-decoration: none;
+  color: #333;
+  border-radius: 10px;
+  border: solid 3px #ccc;
+  background-color: #fff;
+}
+
+a:hover {
+  background-color: #fffdc5;
+  text-decoration: none;
+}
+
+h1 {
+  padding-bottom: 30px;
+}

@@ -1,5 +1,6 @@
 $cWhite: white;
 $cBlack: black;
+$cRed: red;
 
 #container {
     text-align: center;
@@ -30,6 +31,33 @@ $cBlack: black;
            left: 0;
            transform: translateX(-100%);
            transition: transform 0.3s;
+           z-index: -1;
+        }
+
+        &:hover {
+            color: $cWhite;
+
+            & span {
+                transform: none;
+            }
+        }
+    }
+
+    &.slide-bg2 {
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+        
+        & span {
+           display: inline-block;
+           width: 100%;
+           height: 100%;
+           background-color: $cRed;
+           position: absolute;
+           top: 0;
+           left: 0;
+           transform: translateY(-100%);
+           transition: transform 0.6s;
            z-index: -1;
         }
 

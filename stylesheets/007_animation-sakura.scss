@@ -22,14 +22,14 @@
                  sway1 3s ease-in-out infinite alternate;
     }
 
-    // &:nth-child(2){
-    //   left: 5%;
-    //   width: 13px;
-    //   height: 9px;
-    //   animation: fall 15s linear infinite,
-    //              sway1 2s ease-in-out infinite alternate;
-    //   animation-delay: 2s;
-    // }
+    &:nth-child(2){
+      left: 20%;
+      width: 40px;
+      height: 30px;
+      animation: fall 10s linear infinite,
+                sway2 2s infinite;
+      animation-delay: -1s;
+    }
   }
 }
 
@@ -45,5 +45,23 @@
   }
   to {
     transform: translateX(500px) rotate(-180deg);
+  }
+}
+
+@keyframes sway2 {
+  0% {
+    transform: translateX(0px) rotate(0deg) scale(1);
+  }
+  25%{
+    transform: translateX(100px) rotate(90deg) scale(0.1);
+  }
+  50%{
+    transform: translateX(0px) rotate(0deg) scale(3);
+  }
+  75% {
+    transform: translateX(-100px) rotate(-90deg) scale(0.1);
+  }
+  100% {
+    transform: translateX(0px) rotate(0deg) scale(1);
   }
 }
